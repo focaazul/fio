@@ -13,7 +13,7 @@ def menu():
         print("s-Sacar un elemento a LIFO")
         print("m-mostrar LIFO")
         print("f-fin del programa...")
-        opc=str(input("Ingrese su opción: "))
+        opc=input("Ingrese su opción: ")
         if opc=='i' or opc=='s' or opc=='m'or opc=='f':
           return opc
         else:
