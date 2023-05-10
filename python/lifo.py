@@ -3,7 +3,7 @@ Consigna
 Cree un script de Python que permita manejar una  
 lista tipo LIFO, se pide que tenga al menos dos funciones :
 menu y pila para manejar la lista.
-Observación: Como se está intentado fijar conceptos de funciones, se plantea la funci
+Observación: Como se está intentado fijar conceptos de funciones, se plantea la funciones con argumentos y retornos.
 """
 
 def menu():
