@@ -23,7 +23,13 @@ def dimension():
 
 def carga(vector,dimension):
     for x in range(dimension):
-        vector.append(float(input("Ingrese valor:")))
+        while True:
+            try:
+                dato=float(input("Ingrese valor:"))
+                break
+            except ValueError:
+                print("Ingrese un valor numérico..")
+        vector.append(dato)
     return(vector)
 
 def ordena(vector):#ordena por método de burbuja de mayor a menor
@@ -36,12 +42,12 @@ def ordena(vector):#ordena por método de burbuja de mayor a menor
 
 
 
-vector=[]
 cargado=False
 while True:
     opcion=menu()
     print("main")
     if opcion=='1':
+        vector=[]# ver que pasa si se pone esta línea antes de línea 46, fuera del while
         vector=carga(vector, dimension())
         cargado=True
     elif opcion=='2' and cargado:
