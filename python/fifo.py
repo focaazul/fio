@@ -1,3 +1,7 @@
+'''Consigna: Crear usando funciones una pila tipo FIFO que permita 
+cargar, sacar y mostrar valores enteros de la misma.'''
+
+
 def menu():
      while True:
         print("Menú: ") 
