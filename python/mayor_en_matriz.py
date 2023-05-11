@@ -1,8 +1,8 @@
 """
 Realizar un programa en Python que:
 1) Invoque a una funcion menú que SOLO regresa una opcion válida del menu.
-2) Que permita invocar a la función carga, que carga una matriz humedad de dimensiones N x M con N y M definidas como constantes
-3) Que permita invocar a la funcion mayor el mayor valor de la humedad y su ubicación
+2) Que permita invocar a la función carga, que carga una matriz humedad de dimensiones N x M, con N y M definidas como constantes
+3) Que permita invocar a la funcion mayor que regresa  el mayor valor de la humedad y su ubicación en la matriz.
 4) Que presente una opción para finalizar el programa.
 Los valores permitidos para carga en la matriz humedad son [0;100]
 """
