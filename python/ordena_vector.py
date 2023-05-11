@@ -16,7 +16,10 @@ def dimension():
         try:
             dimension=input('Ingrese la cantidad de elementos del Vector: ')
             dimension=int(dimension) # me aseguro que sea entero.
-            return dimension
+               if dimension>1:
+                    return dimension
+               else:
+                    print("Ingrese una dimensión mayor a 1")
         except ValueError:
             print("Error, el valor ingresado no es valido. Reingrese.")
 
@@ -34,8 +37,8 @@ def carga(vector,dimension):
 
 def ordena(vector):#ordena por método de burbuja de mayor a menor
     cant=len(vector)
-    for j in range(cant):
-        for i in range(cant):
+    for j in range(cant-1):
+        for i in range(j,cant):
             if vector[j]<vector[i]:
                 vector[i],vector[j]=vector[j],vector[i]
     return vector
