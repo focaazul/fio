@@ -36,3 +36,4 @@ while True:
 print("El punto intermedio entre {} y {} es {}.".format(a,b,intermedio(a,b) ))
 
 # Se deja como tarea para el alumno, crear una función que valide el intervalo [A,B]
+# en esta solución eso está incluido en la función principal.
