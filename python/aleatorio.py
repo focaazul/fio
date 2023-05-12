@@ -27,10 +27,15 @@ def valida():
 
 #Función principal
 N=10 # cantidad de números aleatorios.
-print("Ingrese un argumento: ")
-x=valida()
-print("Ingrese otro argumento: ")
-y=valida()
+while True:
+    print("Ingrese un argumento: ")
+    x=valida()
+    print("Ingrese otro argumento: ")
+    y=valida()
+    if x==y:
+        print("No pueden ser iguales los argumentos.")
+    else:
+        break
 print(" Ahora mostaremos unos números aleatorios entre {} e {}".format(x,y))
 i=0
 while i<N:
