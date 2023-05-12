@@ -9,7 +9,7 @@ def cargar(facturas):
         continua = input("Quiere cargar otra factura:[s/n]")
 
 
-def valida_importe():
+def valida_importe():#Valida importe que sea nro real positivo
     while True:
             try:
                 valor=float (input("Ingrese importe de factura: "))
@@ -22,7 +22,7 @@ def valida_importe():
             
 
 
-def valida_nro(min,max):#Valida Nro de Factura.
+def valida_nro(min,max):#Valida Nro de Factura que sea entre entre min y max y que no est
     while True:
         try:
             valor=int(input("Ingrese nro. factura, valor entre [{} ,{}]: ".format(min,max)))
