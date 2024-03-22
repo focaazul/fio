@@ -1,21 +1,20 @@
-
 #include <iostream>
-#include <cmath>
+#include <cmath> //Librería para calcular el logaritmo
 
 using namespace std;
+//defino dos constantes
+static const int EDOMINIO=100;//valor numérico de error de dominio ( valor negativo)
+static const int ERANGO=101;//valor numérico para cuando es cero el argumento
 
-static const int EDOMINIO=100;
-static const int ERANGO=101;
-//prueba
-class ErrorMat
+class ErrorMat// defino una clase propia
 {
 public:
-	ErrorMat() : motivo(0) {};
-	ErrorMat(int m) : motivo(m) {};
-	const char* porque() const throw();
+	ErrorMat() : motivo(0) {};//constructor sin argumento
+	ErrorMat(int m) : motivo(m) {};//constructor con argumento
+	const char* porque() const throw();//método 
 	
 private:
-	int motivo;
+	int motivo;//valor del arguemnto
 };
 
 const char* ErrorMat::porque() const throw()
@@ -24,7 +23,7 @@ const char* ErrorMat::porque() const throw()
 	{
 	case EDOMINIO: return "Error, no se puede calcular logaritmo de valor negativo ";break;
 	case ERANGO:   return "Error, no existe el logaritmo de cero ";break;
-	default:       return "Error Desconocido";  //En rigor no debería ocurrir tal Excepción 
+	default:       return "Error Desconocido";  //nunca debería llagar aqui
 	}	
 }
 
