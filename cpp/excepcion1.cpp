@@ -17,7 +17,7 @@ int main() {
 	try {
 		z = division(x, y);//llamo a la función.
 		cout << z << endl;//muestro lo que regresa la función.
-	} catch (const char* msg) { //thow, tiene como argumento un texto, esto se pasa a catch
+	} catch (const char* msg) { //throw, tiene como argumento un texto, esto se pasa a catch
 		cerr <<"línea 21 con cerr dice:"<< msg << endl; //esta línea muestra el mensaje por pantalla
 		cout<<"línea 22 con cout dice:"<< msg << endl; //esta línea muestra el mensaje por pantalla
 	}
