@@ -3,7 +3,7 @@ using namespace std;
 
 float division(int a, int t) {
 	if (t == 0) {
-		throw "Error!!. Ud. está intentando dividir por cero ";//esgte texto paso a cathc como argumento.
+		throw "Error!!. Ud. está intentando dividir por cero ";//este texto paso a catch como argumento.
 	}
 	return (a / t);
 }
