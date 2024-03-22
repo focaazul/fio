@@ -6,7 +6,7 @@ using namespace std;
 
 static const int EDOMINIO=100;
 static const int ERANGO=101;
-
+//prueba
 class ErrorMat
 {
 public:
