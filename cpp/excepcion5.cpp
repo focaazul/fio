@@ -8,7 +8,7 @@ int check_neg(int a, int b) {
 		throw std::invalid_argument("Valor negativo encontrado");
 	}
 	else{
-		cout<<"Par�metros pasados: "<<a<<" y "<<b<<endl;
+		cout<<"Parametros pasados: "<<a<<" y "<<b<<endl;
 	}
 	return 0;
 }
