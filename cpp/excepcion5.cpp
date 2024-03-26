@@ -22,7 +22,7 @@ int main() {
 	try {
 		check_neg(x, y);//llamo a la funcion dentro del bloque try
 	} catch (const invalid_argument& e) {
-		cout << "Argumento invalido!!"<<"  "<<e.what();
+		cout << "Argumento invalido!!"<<" : "<<e.what();
 	}
 }
 
