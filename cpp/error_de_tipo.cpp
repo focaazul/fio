@@ -2,8 +2,8 @@
 using namespace std;
 
 int main () {
-	int x;
-    cin>>x;//en x se almacena todo hasta el Enter.
+	float x;
+    cin>>x; //en x se almacena todo hasta el Enter.
     while (!(cin.good()))
     {
 		
