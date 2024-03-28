@@ -8,7 +8,7 @@ int main () {
     {
 		
 		cout<<"Ud. NO ingresó un numeros!!. Reingrese: ";
-		cin.clear();
+		cin.clear();//reseteo el bit de error.
 		cin.ignore();//limpio el buffer para que no enter en bucle.
 		cin>>x;
     
