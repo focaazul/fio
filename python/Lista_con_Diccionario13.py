@@ -34,10 +34,11 @@ while True:
         if len(alumnos)==0: #parcial tiene cargado algo?
             print("\n---->Nada que mostar.. no se cargó nada!!\n")
         else:
-            print("Nombre\tNota")#Título de las columnas
+            print("Indice\tNombre\t\tNota")#Título de las columnas
             for i in alumnos:# cada i es un diccionario
                 #print(i) #forma sencilla de mostar
-                print(i['nombre'],"\t",i['nota'])#con \t los dejo en columnas
+                print(alumnos.index(i),"\t",i['nombre'],"\t",i['nota'])#con \t los dejo en columnas
+                #alumnos.index(i) , obtiene el índice de la lista que contiene el Diccionario i-.
     elif opc=='S':
         print("Finalizando el programa..")
         break #Con esto termino el while True
