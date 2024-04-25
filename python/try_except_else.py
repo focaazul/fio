@@ -4,7 +4,7 @@ try:
 except:
     print("Ud. no ingreso un entero..")
 else:#Se ejecuta SOLO si no hay excepcion!!
-    print("Continúo con else") #solo ejecuto SI NO hay excepción
+    print("Continúo con else del try") #solo ejecuto SI NO hay excepción
 
 
 #SIEMPRE EJECUTO ESTA LINEA!!
