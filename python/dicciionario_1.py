@@ -1,4 +1,4 @@
-"""Consigna: Mostar el tipo de dato de cada valor del 
+""" Mostar el tipo de dato de cada valor del 
 Diccionario"""
 
 #Declaro diccionario.
