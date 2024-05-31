@@ -14,6 +14,10 @@ int main(int argc, char *argv[]) {
 	{cout<<" Error no se puede abrir archivo . Finalizando " ; cin . get ();return -1;}
 	cout<<"Ingrese : Dia y luego Temperatura y Humedad dejando un espacio entre  cada campo " <<endl;
 	while (cin>>dia>>temp>>humedad){flujo<<i<<" "<<dia<<" "<<temp<<" "<<humedad<<endl; i++;}
+	/*Al enviar la señal de EOF con ctrl-d además de marcarse los bits eof y fail,
+	también se marca el flag de error. El flujo (cin) queda bloqueado 
+	reteniendo el último ingreso. Para desbloquear el flujo cin es necesario 
+	limpiar las banderas y los flags de error después del ingreso de ctrl-d */
 	clearerr(stdin);
 	cin.clear();
 	flujo.close();
