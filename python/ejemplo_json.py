@@ -8,5 +8,5 @@ pedidos = [
 ]
 
 # Guardar en un archivo JSON
-with open("pedidos.json", "w") as archivo:
+with open("pedidos.txt", "w") as archivo: #guarda los datos en archivo pedidos.txt
     json.dump(pedidos, archivo, indent=4)  # indent=4 para mejor legibilidad
