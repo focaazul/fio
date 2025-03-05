@@ -1,4 +1,5 @@
-import json #importo la librería.
+#import json , no sería necesario, Python3 ya tiene por defecto esta librería.
+
 
 #Lista con varios diccionarios como elementos de la lista
 pedidos = [
