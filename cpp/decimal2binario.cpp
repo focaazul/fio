@@ -16,7 +16,7 @@ for(int i=0; i<9;i++){
 cout<<binario[i];
 }
 cout<<endl<<" vemos que falta invertir el orden"<<endl;
-//Si verificamos veremos que esta invertido, vamos a corregir.
+//Si verificamos veremos que no esta invertido, vamos a corregir.
 //roto en el mismo arreglo,
 for(int i=0; i<5;i++){
 temp=binario[i];
