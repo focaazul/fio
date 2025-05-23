@@ -12,11 +12,11 @@ while activo: #<---Bandera !!
     
     elif operacion in ["sumar", "restar", "multiplicar", "dividir"]:
         try:
-            a = float(input("Ingrese el primer número: "))
-            b = float(input("Ingrese el segundo número: "))
+            a = float(input("Ingrese el primer número: "))#en try SOLO lo que puede crear excepción!
+            b = float(input("Ingrese el segundo número: "))#en try SOLO lo que puede crear excepción!
         except ValueError:
             print("Por favor ingrese números válidos.\n")
-        else:   
+        else:   #en else de try NO hay nada que genere excepción!
             if operacion == "sumar":
                 resultado = a + b
             elif operacion == "restar":
@@ -24,7 +24,7 @@ while activo: #<---Bandera !!
             elif operacion == "multiplicar":
                 resultado = a * b
             elif operacion == "dividir":
-                if b != 0:
+                if b != 0:# <---división por o no genera excepción por que se analiza antes!!!
                     resultado = a / b
                 else:
                     print("Error: no se puede dividir por cero.")
