@@ -14,7 +14,9 @@ while activo: #<---Bandera !!
         try:
             a = float(input("Ingrese el primer número: "))
             b = float(input("Ingrese el segundo número: "))
-            
+        except ValueError:
+            print("Por favor ingrese números válidos.\n")
+        else:   
             if operacion == "sumar":
                 resultado = a + b
             elif operacion == "restar":
@@ -27,11 +29,6 @@ while activo: #<---Bandera !!
                 else:
                     print("Error: no se puede dividir por cero.")
                     continue  # vuelve al inicio del while
-            
             print(f"Resultado: {resultado}\n")
-        
-        except ValueError:
-            print("Por favor ingrese números válidos.\n")
-    
     else:
         print("Operación no reconocida. Intente nuevamente.\n")
