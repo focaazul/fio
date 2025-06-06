@@ -1,17 +1,24 @@
-/*Este código asigna como nombre de un archivo
-al argumento pasado  al ejecutar en la terminal */
+/*Este programa recibe desde la linea de comandos como argumento un nombre
+y crea un archivo con ese nombre y guarda 12345678 en el archivo*/
 
 #include <iostream>
 #include <fstream>
 using namespace std;
-
-int main(int argc, char *argv[]) 
-{
-cout<<"cantidad de argumentos pasados:"<<argc<<endl;
-for(int i=0;i<argc;i++) cout<<"Argumento :"<<i<<" es : "<<argv[i]<<endl;
-fstream flujo(argv[1], ios::app);
-flujo<<"Hola 1 "<<endl;
-flujo<<"Mundo 1 "<<endl;
-flujo.close();
-return 0;
+int main(int argc, char *argv[]) {
+	if (argc < 2) {
+		cerr << "Debe pasar un nombre de archivo como argumento." << endl;
+		return -1;
+	}
+	cout << "Argumento recibido: " << argv[1] << endl;
+	// Abrimos el archivo, crea el archivo si no existe
+	ofstream archivo(argv[1], ios::app);
+	if (!archivo) {
+		cerr << "No se pudo crear el archivo: " << argv[1] << endl;
+		return -2;
+	}
+	archivo << "1234";
+	archivo << "5678"<<endl;
+	archivo.close();
+	cout << "Archivo creado exitosamente.\n";
+	return 0;
 }
