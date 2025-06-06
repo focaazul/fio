@@ -36,6 +36,7 @@ for(int i=0;i<cantidad;i++)
 	cout<<"Dia: "<<dia_semana<<'\t';
 	fentrada.read((char *)&z,sizeof(float));	
 	cout<<"Temperatura: "<<z<<'\t';
+	cout<<endl;
 }
 fentrada.close();
 return 0;
