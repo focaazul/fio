@@ -1,4 +1,5 @@
-/*Este código asigna como nombre de un archivo al argumento al ejecutar en la terminal */
+/*Este código asigna como nombre de un archivo
+al argumento pasado  al ejecutar en la terminal */
 
 #include <iostream>
 #include <fstream>
