@@ -1,3 +1,9 @@
+/*
+ * Autor: Daniel Refosco
+ * Fecha: 06/06/2025
+ * Descripción:Argumentos a main.
+ */        
+
 #include <iostream>
 using namespace std;
 
