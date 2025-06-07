@@ -1,3 +1,9 @@
+/*
+ * Autor: Daniel Refosco
+ * Fecha: 06/06/2025
+ * Descripción: Ficheros
+ */        
+
 #include <fstream>
 #include <iostream>
 
