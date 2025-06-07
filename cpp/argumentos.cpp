@@ -1,5 +1,9 @@
-/*Este programa recibe desde la linea de comandos como argumento un nombre
-y crea un archivo con ese nombre y guarda 12345678 en el archivo*/
+/*
+ * Autor: Daniel Refosco
+ * Fecha: 06/06/2025
+ * Descripción: Este programa recibe desde la linea de comandos como argumento un nombre
+ * y crea un archivo con ese nombre y guarda 12345678 en el archivo.
+ */              
 
 #include <iostream>
 #include <fstream>
