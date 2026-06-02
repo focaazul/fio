@@ -1,6 +1,10 @@
 /*
-Este archivo es para probar el posicionamiento en un archivo usando los métodos seekp y tellp.
-
+* Archivo   : seekp_tellp.cpp
+* Autor     : Daniel Refosco
+* Fecha     : 02/06/2026
+* Descripción:
+*   Ejemplo de uso de las funciones tellp() y seekp() para consultar
+*   y modificar la posición del cursor de escritura en un archivo.
 */
 #include <iostream>
 #include <fstream>
