@@ -1,5 +1,10 @@
-*
-Este archivo es para probar el posicionamiento en un archivo usando los métodos seekg y tellg.
+/*
+* Archivo   : seekg_tellg.cpp
+* Autor     : Daniel Refosco
+* Fecha     : 02/06/2026
+* Descripción:
+*   Ejemplo de uso de las funciones tellg() y seekg() para consultar
+*   y modificar la posición del cursor delectura en un archivo.
  
 */
 #include <iostream>
