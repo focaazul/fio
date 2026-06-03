@@ -1,3 +1,10 @@
+/*
+* Archivo   : const_char.cpp
+* Autor     : Daniel Refosco
+* Fecha     : 03/06/2026
+* Descripción:
+*   Ejemplo de uso con errores de const sobre variables char
+*/
 #include <iostream>
 #include <fstream>
 using namespace std;
