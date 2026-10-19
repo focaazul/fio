@@ -37,8 +37,9 @@ while True:
             print("Indice\tNombre\t\tNota")#Título de las columnas
             for i in range(len(alumnos)):
                 #print(i) #forma sencilla de mostar
-                print(alumnos.index(i),"\t",i['nombre'],"\t",i['nota'])#con \t los dejo en columnas
-                #alumnos.index(i) , obtiene el índice de la lista que contiene el Diccionario i-.
+                 print(i, "\t", alumnos[i]['nombre'], "\t", alumnos[i]['nota']) #con \t los dejo en columnas
+                #i es el índica de la lista
+                # alumnos[i], es el diccionario correspondiente a ese indice.
     elif opc=='S':
         print("Finalizando el programa..")
         break #Con esto termino el while True
