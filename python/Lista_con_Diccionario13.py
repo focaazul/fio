@@ -35,7 +35,7 @@ while True:
             print("\n---->Nada que mostar.. no se cargó nada!!\n")
         else:
             print("Indice\tNombre\t\tNota")#Título de las columnas
-            for i in range(len(alumnos):
+            for i in range(len(alumnos)):
                 #print(i) #forma sencilla de mostar
                 print(alumnos.index(i),"\t",i['nombre'],"\t",i['nota'])#con \t los dejo en columnas
                 #alumnos.index(i) , obtiene el índice de la lista que contiene el Diccionario i-.
